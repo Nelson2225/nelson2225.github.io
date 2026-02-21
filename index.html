@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson - Разработчик Приложений</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="floating-particles" id="particles"></div>
+    </div>
+
+    <nav>
+        <div class="nav-container">
+           <div class="logo" onclick="showPage('home')">
+       <div class="logo-icon">
+        <img src="logo.png" alt="Turtskh Logo">
+    </div>
+    
+</div>
+            <ul class="nav-links" id="navLinks">
+                <li><button onclick="showPage('home')" class="nav-btn active" data-page="home">Главная</button></li>
+                <li><button onclick="showPage('services')" class="nav-btn" data-page="services">Услуги</button></li>
+                <li><button onclick="showPage('projects')" class="nav-btn" data-page="projects">Проекты</button></li>
+                <a href="privacy.html" target="_blank" class="nav-btn">Политика конфиденциальности</a>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+  
+    <div id="home" class="page active">
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Привет! Я Nelson<br>Разработчик современных приложений</h1>
+                    <p class="hero-subtitle">Создаю мобильные и веб-приложения с инновационным дизайном, которые решают реальные задачи и делают жизнь пользователей лучше</p>
+                    <div class="hero-buttons">
+                        <button class="cta-button primary" onclick="showPage('projects')">Посмотреть Работы</button>
+                        <button class="cta-button secondary" onclick="showPage('services')">Мои Услуги</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-demo">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">const</span> <span class="variable">developer</span> = {</div>
+                                <div class="code-line">  name: <span class="string">'Nelson'</span>,</div>
+                                <div class="code-line">  skills: [<span class="string">'React'</span>, <span class="string">'Node.js'</span>],</div>
+                                <div class="code-line">  passion: <span class="string">'coding'</span></div>
+                                <div class="code-line">};</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="home-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">45</div>
+                        <div class="stat-label">Проектов Завершено</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Технологий</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Лет Опыта</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Удовлетворенность</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="services" class="page">
+        <div class="container">
+            <h1 class="page-title">Мои Услуги</h1>
+            <p class="page-subtitle">Полный цикл разработки от идеи до запуска и поддержки</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Мобильные Приложения</h3>
+                    <p>Разработка нативных и кроссплатформенных приложений для iOS и Android. Использую React Native, Flutter и Swift для создания быстрых и красивых приложений.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Веб-Приложения</h3>
+                    <p>Создание современных веб-приложений с использованием React, Vue.js и Node.js. Адаптивный дизайн, высокая производительность и SEO-оптимизация.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Дизайн</h3>
+                    <p>Проектирование интуитивных интерфейсов с фокусом на пользовательский опыт. Создаю прототипы, макеты и дизайн-системы в Figma.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Backend Разработка</h3>
+                    <p>Построение надежных серверных решений на Node.js, Express и базах данных MongoDB, PostgreSQL. RESTful API и GraphQL.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Оптимизация</h3>
+                    <p>Улучшение производительности существующих приложений, рефакторинг кода, оптимизация скорости загрузки и уменьшение потребления ресурсов.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Техподдержка</h3>
+                    <p>Постоянная поддержка проектов, исправление багов, обновление зависимостей и добавление новых функций по мере необходимости.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div id="projects" class="page">
+        <div class="container">
+            <h1 class="page-title">Избранные Проекты</h1>
+            <p class="page-subtitle">Реализованные решения для различных сфер бизнеса</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">🛒</div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Полнофункциональная платформа электронной коммерции с корзиной, платежами, панелью администратора и системой отзывов. Построена на React и Node.js.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">💪</div>
+                    <div class="project-content">
+                        <h3>Fitness Tracker App</h3>
+                        <p>Мобильное приложение для отслеживания тренировок, питания и прогресса. Интеграция с носимыми устройствами и социальными функциями.</p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Redux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">📊</div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Интерактивная панель аналитики для визуализации бизнес-данных в реальном времени. Графики, отчеты и экспорт данных.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   
+<div id="privacy" class="page">
+    <div class="container">
+        <h1 class="page-title">Privacy Policy – Nelculator</h1>
+        <p class="page-subtitle">Эта страница объясняет, как Nelculator обрабатывает данные пользователей и использует рекламу AdMob.</p>
+        
+        <div class="policy-grid">
+            <div class="policy-item">
+                <div class="policy-icon">🛡️</div>
+                <h3>1. Информация, которую мы собираем</h3>
+                <p>Приложение <strong>Nelculator</strong> не собирает личную информацию пользователей.  
+                Однако мы используем <strong>AdMob (Google Mobile Ads)</strong>, который может собирать:</p>
+                <ul>
+                    <li>Идентификаторы устройства (Advertising ID)</li>
+                    <li>IP-адрес и приблизительное местоположение</li>
+                    <li>Данные об использовании приложения для аналитики рекламы</li>
+                </ul>
+            </div>
+
+            <div class="policy-item">
+                <div class="policy-icon">📊</div>
+                <h3>2. Использование информации</h3>
+                <p>Данные, собранные через AdMob, используются только для:</p>
+                <ul>
+                    <li>Отображения персонализированной рекламы</li>
+                    <li>Анализа эффективности рекламных кампаний</li>
+                </ul>
+                <p>Приложение само по себе <strong>не хранит и не передает личные данные пользователей</strong>.</p>
+            </div>
+
+            <div class="policy-item">
+                <div class="policy-icon">🤝</div>
+                <h3>3. Передача данных третьим лицам</h3>
+                <p>Неперсональные данные через AdMob могут передаваться Google и другим рекламным партнерам.  
+                Мы <strong>не передаем личные данные</strong> пользователям или третьим лицам.</p>
+            </div>
+
+            <div class="policy-item">
+                <div class="policy-icon">👶</div>
+                <h3>4. Конфиденциальность детей</h3>
+                <p>Приложение <strong>не предназначено для детей до 13 лет</strong> и мы сознательно не собираем их данные.</p>
+            </div>
+
+            <div class="policy-item">
+                <div class="policy-icon">🔒</div>
+                <h3>5. Безопасность</h3>
+                <p>Мы принимаем разумные меры для защиты данных, собираемых через AdMob.</p>
+            </div>
+
+            <div class="policy-item">
+                <div class="policy-icon">🌐</div>
+                <h3>6. Сторонние сервисы</h3>
+                <p>Nelculator использует <strong>Google AdMob</strong>. Политика конфиденциальности доступна здесь:  
+                <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></p>
+            </div>
+
+            <div class="policy-item">
+                <div class="policy-icon">📝</div>
+                <h3>7. Изменения в Privacy Policy</h3>
+                <p>Мы можем время от времени обновлять эту политику. Изменения будут опубликованы на этой странице и в Google Play Store.</p>
+            </div>
+
+            <div class="policy-item">
+                <div class="policy-icon">✉️</div>
+                <h3>8. Контакты</h3>
+                <p>Если у вас есть вопросы по поводу этой Privacy Policy, свяжитесь с нами по электронной почте:  
+                <strong>nelsdev22@gmail.com</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
